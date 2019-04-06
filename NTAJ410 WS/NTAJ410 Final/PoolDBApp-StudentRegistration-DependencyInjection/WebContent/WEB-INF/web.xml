@@ -1,0 +1,6 @@
+<web-app>
+  <display-name>PoolDBApp-StudentRegistration</display-name>
+  <welcome-file-list>
+    <welcome-file>register.html</welcome-file>
+  </welcome-file-list>
+</web-app>

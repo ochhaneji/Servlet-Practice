@@ -1,0 +1,116 @@
+
+
+<h1 style="color:red">Html to servlet communication using all form comps</h1>
+
+<form action="formurl"  method="GET">
+   <table border="0"  align="center">
+       <tr>
+           <td> person name::  </td>
+           <td><input type="text"  name="pname"  placeholder="enter name"/>                     </td>
+       </tr>
+       <tr>
+           <td> person age::  </td>
+           <td><input type="password"  name="page"  placeholder="enter age"/>                     </td>
+       </tr>
+        <tr>
+           <td> person address::  </td>
+           <td>
+              <textarea name="addrs" rows="3" cols="10" placeholder="address">
+              </textarea>
+            </td>
+       </tr>
+           <tr>
+           <td> Marital Status::  </td>
+           <td><input type="checkbox"  name="ms"  value="married" />Married       </td>
+       </tr>
+       </tr>
+        <tr>
+           <td> Geneder::  </td>
+           <td><input type="radio"  name="gender"  value="M" />Male
+                     &nbsp;&nbsp;
+                     <input type="radio"  name="gender"  value="F" checked />FeMale
+                  </td>
+           </tr>
+           
+         <tr>
+           <td>Qualification </td>
+           <td>
+               <select name="qlfy">
+                     <option value="" selected>--select --</option>
+                     <option value="engg">B.E/B.Tech</option>
+                     <option value="medico">MBBS</option>
+                     <option value="arts">B.A/M.A</option>
+                     <option value="commerce" >B.Com/M.Com</option>
+               </select>
+           </td>
+           </tr>
+        <tr>
+           <td> Courses:: </td>
+           <td>
+                 <select name="courses"  multiple>
+                      <option value="java">Java Pkg</option>
+                      <option value=".net">.Net Pkg</option>
+                      <option value="php">Php Pkg</option>
+                      <option value="ui">UI Pkg</option>
+                 </select>
+            </td>
+           </tr>
+         <tr>
+           <td> Hobies::  </td>
+           <td>
+                   <input type="checkbox" name="hb" value="reading" checked>Reading Books
+                   <input type="checkbox" name="hb" value="roaming" >Traveling
+                   <input type="checkbox" name="hb" value="sleeping" >Meditation
+            </td>
+           </tr>
+           <tr>
+              <td> DOB ::  </td>
+              <td>  <input type="date" name="dob"/>           </td>
+           </tr>
+           <tr>
+              <td> DOB :: </td>
+              <td> <input type="datetime-local" name="dob1" />
+           </tr>
+           <tr>
+           <td> DOB :: </td>
+              <td> <input type="datetime" name="dob2" />
+           </tr>
+           <tr>
+             <td> DOB (time) :: </td>
+              <td> <input type="time" name="dobtime" />
+           </tr>
+           <tr>
+             <td> Color  :: </td>
+              <td> <input type="color" name="color" />
+           </tr>
+           <tr>
+             <td> income Range  :: </td>
+              <td> <input type="range" name="income" min="10000" max="200000"/>
+           </tr>
+            <tr>
+             <td> email Id  :: </td>
+              <td> <input type="email" name="email" />
+           </tr>
+            <tr>
+             <td> telephone  :: </td>
+              <td> <input type="tel" name="phone" />
+           </tr>
+             <tr>
+             <td> Lucky Week  :: </td>
+              <td> <input type="week" name="lw" />
+           </tr>
+             <tr>
+             <td> url  :: </td>
+              <td> <input type="url" name="snUrl" />
+           </tr>
+           
+           
+           
+           
+           
+           <tr>
+               <td><input type="submit"  value="submit"> </td>
+               <td><input type="reset"  value="cancel"> </td>
+           </tr>
+   </table>
+</form>

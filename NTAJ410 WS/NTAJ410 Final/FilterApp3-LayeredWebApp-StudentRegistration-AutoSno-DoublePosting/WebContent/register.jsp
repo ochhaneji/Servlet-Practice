@@ -1,0 +1,13 @@
+
+
+<h1 style="color:red;text-align:center">Student Registration Form-Layered Application</h1>
+
+<form action="controller.jsp"  method="POST">
+
+       Student name :: <input type="text"  name="sname"><br>
+       Marks1 :: <input type="text"  name="m1"><br>
+       Marks2 :: <input type="text"  name="m2"><br>
+       Marks3 :: <input type="text"  name="m3"><br>
+       <input type="hidden"  name="cToken" value="${sToken}"/> 
+       <input type="submit"  value="register">
+</form>

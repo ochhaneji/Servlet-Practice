@@ -1,0 +1,27 @@
+
+
+<h1 style="color:red;text-align:center">Working with Multiple hyperlinks and Submit Buttons</h1>
+
+<form name="frm" action="processurl" method="POST">
+     value1:: <input type="text" name="t1"> <br>
+     value2 ::<input type="text" name="t2"> <br>
+     <input type="hidden" name="s1"/>
+     <input type="button"   value="sum" onclick="send(this.value)">
+     <input type="button"   value="diff"  onclick="send(this.value)">
+     <input type="button"   value="product" onclick="send(this.value)">
+     <bR>
+     <a href="processurl?s1=link1">sys props</a>  &nbsp;&nbsp;  <a href="processurl?s1=link2">Date and time</a>
+</form>
+  <script language="JavaScript">
+     function send(cap){
+       if(cap=="sum")
+          frm.s1.value="add";
+       else if(cap=="diff")
+          frm.s1.value="sub";
+         else if(cap=="product")
+            frm.s1.value="mul";
+            //submit the request
+            frm.submit();  
+     }
+     
+  </script>

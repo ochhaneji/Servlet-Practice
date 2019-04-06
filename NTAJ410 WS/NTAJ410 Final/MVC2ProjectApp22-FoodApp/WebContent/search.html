@@ -1,0 +1,48 @@
+
+
+
+<h1 style="color:red;text-align:center">Find Restaurants</h1>
+<script language="JavaScript">
+   function isExcel(){
+      frm.source.value="excel";
+      validate();
+   }
+   function isHtml(){
+      frm.source.value="html";
+      validate();
+   }
+   function validate(){
+      //form validation logic
+      if(frm.category.selectedIndex==0){
+        document.getElementById("errMsg").innerHTML=" u must select Category";
+        return false;
+      }
+      else{
+         frm.submit();
+         return true;
+      }
+      
+   }
+
+</script>
+
+<form name="frm" action="controller"  method="POST">
+ <span id="errMsg" style="color:red"></span>
+ <table border="1">
+  <tr>
+    <th>Select Food Category</th>
+     <th><select name="category">
+                <option value="">--select value---</option>
+                <option value="south-ind">SOUTH INDIAN</option>
+                <option value="north-ind">NORTH INDIAN</option>
+                <option value="chinese">CHINESE</option>
+                <option value="conti">CONTINENTAL</option>
+        </select> </th> 
+   </tr>
+   <tr>  
+      <td><button type="button"  onclick="isExcel()">Excel Output</button>  </td>
+      <td><button type="button" onclick="isHtml()">Html Output</button>  </td>
+   </tr>
+  </table>
+    <input type="hidden" name="source">
+</form>

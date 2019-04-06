@@ -1,0 +1,1 @@
+SQL> create table Cookie_PersonalInfo(name varchar2(20),fname varchar2(20),income number(10,2),tax number(8));

@@ -1,0 +1,7 @@
+name:raja
+age:25
+addrs:hyd
+qualification: B.tech
+Expected salary: 7 
+SkillSet :: java
+

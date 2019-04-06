@@ -1,0 +1,3 @@
+SQL> create table hidden_register(name varchar2(15),
+          fname varchar2(15),ms varchar2(10),
+          f2val1 varchar2(20),f2val2 varchar2(20));

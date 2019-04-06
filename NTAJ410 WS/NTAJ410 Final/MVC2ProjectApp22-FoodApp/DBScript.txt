@@ -1,0 +1,10 @@
+SQL> desc   online_foodApp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ RESTID                                    NOT NULL NUMBER(6)
+ RESTNAME                                           VARCHAR2(10)
+ LOCATION                                           VARCHAR2(10)
+ RATING                                             VARCHAR2(6)
+ PRICEFOR2                                          NUMBER(5)
+ CATEGORY                                           VARCHAR2(10)
+ STATUS                                             VARCHAR2(20)

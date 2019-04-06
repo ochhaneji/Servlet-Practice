@@ -1,0 +1,45 @@
+
+<web-app>
+    <welcome-file-list>
+           <welcome-file>input.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+	  <servlet-name>emp</servlet-name>
+	  <servlet-class>com.nt.servlet.EmpSearchDBServlet</servlet-class>
+	  <init-param>
+	     <param-name>driver</param-name>
+	     <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+	  </init-param>
+	  <init-param>
+	     <param-name>url</param-name>
+	     <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+	  </init-param>
+	  <init-param>
+	     <param-name>dbuser</param-name>
+	     <param-value>system</param-value>
+	  </init-param>
+	  <init-param>
+	     <param-name>dbpwd</param-name>
+	     <param-value>tiger</param-value>
+	  </init-param>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>emp</servlet-name>
+	    <url-pattern>/empurl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>test</servlet-name>
+	  <servlet-class>com.nt.servlet.TestServlet</servlet-class>
+	  <init-param>
+	     <param-name>dbuser</param-name>
+	     <param-value>system1</param-value>
+	  </init-param>
+	 </servlet>
+	 <servlet-mapping>
+	    <servlet-name>test</servlet-name>
+	    <url-pattern>/testurl</url-pattern>
+	</servlet-mapping>
+	 
+	
+</web-app>
