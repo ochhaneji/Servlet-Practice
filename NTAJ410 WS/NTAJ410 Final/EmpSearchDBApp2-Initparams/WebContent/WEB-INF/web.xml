@@ -12,11 +12,11 @@
 	  </init-param>
 	  <init-param>
 	     <param-name>url</param-name>
-	     <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+	     <param-value>jdbc:oracle:thin:@localhost:1521:orcl</param-value>
 	  </init-param>
 	  <init-param>
 	     <param-name>dbuser</param-name>
-	     <param-value>system</param-value>
+	     <param-value>scott</param-value>
 	  </init-param>
 	  <init-param>
 	     <param-name>dbpwd</param-name>
