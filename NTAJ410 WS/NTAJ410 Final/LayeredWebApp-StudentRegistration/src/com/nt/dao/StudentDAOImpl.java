@@ -19,6 +19,7 @@ public class StudentDAOImpl implements StudentDAO {
 		//create InitialContext obj
 		ic=new InitialContext();
 		ds=(DataSource) ic.lookup("java:/comp/env/DsJndi");
+		
 		//get Pooled JDBc connection
 		con=ds.getConnection();
 		return con;

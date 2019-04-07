@@ -1,0 +1,14 @@
+
+SQL> create table student(sno number primary key,sname varchar2(10),
+													total number,
+													avg number(6,2),
+													result varchar2(10));
+
+SQL> desc student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SNO                                       NOT NULL NUMBER
+ SNAME                                              VARCHAR2(10)
+ TOTAL                                              NUMBER
+ AVG                                                NUMBER(6,2)
+ RESULT                                             VARCHAR2(10)
