@@ -11,22 +11,25 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/headerurl")
 public class HeaderServlet extends HttpServlet {
-	
+
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		PrintWriter pw=null;
-		//general settings
-		pw=res.getWriter();
+		PrintWriter pw = null;
+		// general settings
+		pw = res.getWriter();
+		// set content type
 		res.setContentType("text/html");
-		//header content
-		pw.println("<h1 style='color:red;text-align:center'>N A R E S H IT </h1>");
-		//do not close stream
-		//pw.close();
+		// main logic
+		pw.println("<h1><b> Junune Engineering <b></h1>");
+		pw.println("<br><br>");
+		// do not close stream
+		// pw.close();
 	}
-	
+
 	@Override
-	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		doGet(req,res);
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(req, resp);
 	}
 
 }

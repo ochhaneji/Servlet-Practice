@@ -6,15 +6,15 @@
   </context-param>
   <context-param>
     <param-name>url</param-name>
-    <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+    <param-value>jdbc:oracle:thin:@localhost:1521:orcl</param-value>
   </context-param>
   <context-param>
     <param-name>dbuser</param-name>
-    <param-value>system</param-value>
+    <param-value>scott</param-value>
   </context-param>
   <context-param>
     <param-name>dbpwd</param-name>
-    <param-value>manager</param-value>
+    <param-value>tiger</param-value>
   </context-param>
   <welcome-file-list>
     <welcome-file>input.html</welcome-file>

@@ -9,24 +9,26 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/headerurl")
-public class HeaderServlet extends HttpServlet {
-	
+@WebServlet (value="/errorurl",name="err")
+public class ErrorServlet extends HttpServlet {
+
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		PrintWriter pw=null;
-		//general settings
-		pw=res.getWriter();
+		PrintWriter pw = null;
+		// general setting
+		pw = res.getWriter();
 		res.setContentType("text/html");
-		//header content
-		pw.println("<h1 style='color:red;text-align:center'>N A R E S H IT </h1>");
-		//do not close stream
-		//pw.close();
-	}
-	
-	@Override
-	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		doGet(req,res);
+
+		// printing the non technical msg for the non techincal users
+		pw.println("Internal Problem hbhai kuch abi <b>Work in Progress</b> wait kar");
+		pw.println("<h1><a href='EmployeeFind.html'>Try Again</a></h1>");
+		// close the stream
+		pw.close();
 	}
 
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(req, res);
+	}
 }

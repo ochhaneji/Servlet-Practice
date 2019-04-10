@@ -23,7 +23,7 @@ public class  EmpSearchDBServlet extends  HttpServlet
 		  ServletContext sc=null;
 		  String s1=null,s2=null,s3=null,s4=null;
 		  RequestDispatcher rd=null,rd1=null,rd2=null;
-		  try {
+		 
 			  //include header content
 			rd1=req.getRequestDispatcher("/headerurl");
 			rd1.include(req,res);
@@ -42,6 +42,7 @@ public class  EmpSearchDBServlet extends  HttpServlet
 			   s3=sc.getInitParameter("dbuser");
 			   s4=sc.getInitParameter("dbpwd");
 		   //Active JDBC driver s/w by loading  JDBC Driver class
+			   try {
 		   Class.forName(s1);
 		   //establish the connection
                con=DriverManager.getConnection(s2,s3,s4);
@@ -75,14 +76,17 @@ public class  EmpSearchDBServlet extends  HttpServlet
 		   catch(Exception e){
 			   //forward to ErrorServlet 
 			   //rd=req.getRequestDispatcher("errorurl");
-			   /*sc=getServletContext();
-			   rd=sc.getRequestDispatcher("/errorurl");*/
+			/*
+			 * sc=getServletContext(); 
+			 * rd=sc.getRequestDispatcher("/errorurl");
+			 */
 /*			   sc=getServletContext();
 			   rd=sc.getNamedDispatcher("err");
 */           
 			    //rd=req.getRequestDispatcher("myError.html");
-			   //rd=req.getRequestDispatcher("/myurl");
-			    rd=req.getRequestDispatcher("/errorurl");
+			 //  rd=req.getRequestDispatcher("/myurl");
+			   e.printStackTrace();
+			   rd=req.getRequestDispatcher("/errorurl");
 			    rd.forward(req,res);
 			
 		   }
